@@ -1,0 +1,1 @@
+web: gunicorn keklist.wsgi
