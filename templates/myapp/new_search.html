@@ -9,13 +9,15 @@
     
             <div class="col s4">
                 <div class="card">
-                    <a href="/"><img src="/" alt=""></a>
-                </div>
-                <div class="class-content">
-                    <p>{{ post.0 }}</p>
-                </div>
-                <div class="class-action">
-                    <a href="{{ post.1 }}">Price: {{ post.2 }} </a>
+                    <div class="card-image">
+                        <a href="/"><img src="{{ post.3 }}" alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>{{ post.0 }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{{ post.1 }}">Price: {{ post.2 }} </a>
+                    </div>
                 </div>
             </div>
 
@@ -23,5 +25,4 @@
 
     </div>
 
-    
 {% endblock content %}
