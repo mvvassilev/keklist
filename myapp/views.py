@@ -12,8 +12,8 @@ def home(request):
 
 def new_search(request):
     search = request.POST.get('search')
-    response = requests.get('https://berlin.craigslist.org/search/sss?query=car')
-    data = response.text
-    print(data)
+    # response = requests.get('https://berlin.craigslist.org/search/sss?query=asdgasdasdd')
+    # data = response.text
+    # print(data)
     context = {'search': search}
     return render(request, 'myapp/new_search.html', context)
